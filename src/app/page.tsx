@@ -87,15 +87,6 @@ export default function Home() {
                 support that facilitates success and progress for each
                 individual we walk alongside.
               </p>
-              <blockquote className="border-l-2 border-cobalt pl-5">
-                <p className="font-serif text-base italic leading-relaxed text-ink/80 sm:text-lg">
-                  “But we have this treasure in jars of clay, to show that the
-                  surpassing power belongs to God and not to us.”
-                </p>
-                <cite className="mt-3 block font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-concrete not-italic">
-                  2 Corinthians 4:7
-                </cite>
-              </blockquote>
             </Reveal>
           </div>
         </section>
@@ -240,17 +231,30 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-white/10 bg-ink">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
-          <Image
-            src="/brand/logo/lutreos-wordmark-one-color-white.svg"
-            alt="Lutreos"
-            width={120}
-            height={28}
-            className="h-5 w-auto opacity-80"
-          />
-          <p className="font-display text-[0.68rem] font-medium uppercase tracking-[0.16em] text-concrete">
-            Lutreos LLC · Supported living services
-          </p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 sm:px-8 lg:px-10 lg:py-14">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between sm:gap-10">
+            <div className="max-w-xl">
+              <Image
+                src="/brand/logo/lutreos-wordmark-one-color-white.svg"
+                alt="Lutreos"
+                width={280}
+                height={68}
+                className="h-10 w-auto opacity-95 sm:h-12"
+              />
+              <blockquote className="mt-6">
+                <p className="font-serif text-sm italic leading-relaxed text-white/65 sm:text-base">
+                  “But we have this treasure in jars of clay, to show that the
+                  surpassing power belongs to God and not to us.”
+                </p>
+                <cite className="mt-3 block font-display text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-concrete not-italic">
+                  2 Corinthians 4:7
+                </cite>
+              </blockquote>
+            </div>
+            <p className="font-display text-[0.68rem] font-medium uppercase tracking-[0.16em] text-concrete sm:pt-2">
+              Lutreos LLC · Supported living services
+            </p>
+          </div>
         </div>
       </footer>
     </div>
