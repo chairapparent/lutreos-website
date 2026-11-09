@@ -1,69 +1,258 @@
 import Image from "next/image";
+import { InstagramMoments } from "../components/InstagramMoments";
+import { Reveal } from "../components/Reveal";
+import { SiteHeader } from "../components/SiteHeader";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div id="top" className="flex min-h-full flex-col">
+      <SiteHeader />
+
+      <main className="flex-1">
+        <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-cobalt">
+          <div className="absolute inset-0">
+            <Image
+              src="/brand/imagery/mockup-plaque.jpg"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="animate-drift object-cover object-center opacity-55"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.28)_0%,rgba(31,75,153,0.55)_38%,rgba(24,58,120,0.92)_78%,rgba(20,20,20,0.96)_100%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_70%_20%,rgba(143,166,201,0.22),transparent_60%)]" />
+          </div>
+
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-32 sm:px-8 sm:pb-20 lg:px-10 lg:pb-24">
+            <Image
+              src="/brand/logo/lutreos-wordmark-one-color-white.svg"
+              alt="Lutreos"
+              width={720}
+              height={180}
+              priority
+              className="animate-rise h-auto w-[min(88vw,34rem)] max-w-full"
+            />
+
+            <hr className="section-rule animate-rule delay-1 mt-8 border-0 bg-white/90" />
+
+            <h1 className="animate-rise delay-2 mt-8 max-w-3xl font-serif text-[clamp(1.85rem,4.6vw,3.35rem)] font-medium leading-[1.12] tracking-[-0.02em] text-white">
+              We help our clients get where they want to go.
+            </h1>
+
+            <p className="animate-rise delay-3 mt-5 max-w-xl font-serif text-[1.05rem] leading-relaxed text-white/82 sm:text-lg">
+              Supported living services that help people with developmental
+              disabilities navigate obstacles and make real progress in their
+              lives.
+            </p>
+
+            <div className="animate-rise delay-4 mt-9 flex flex-wrap items-center gap-3">
+              <a
+                href="#contact"
+                className="inline-flex items-center bg-white px-5 py-3 font-display text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-cobalt transition-colors duration-300 hover:bg-paper"
+              >
+                Get in touch
+              </a>
+              <a
+                href="#mission"
+                className="inline-flex items-center border border-white/35 px-5 py-3 font-display text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:border-white hover:bg-white/10"
+              >
+                Our mission
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="mission" className="concrete-wash relative">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-10 lg:py-28">
+            <Reveal>
+              <p className="font-display text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-cobalt">
+                Mission
+              </p>
+              <hr className="section-rule mt-5" />
+              <h2 className="mt-6 font-display text-[clamp(2rem,4vw,3.25rem)] font-bold uppercase leading-[0.95] tracking-[0.02em] text-ink">
+                Treasure in
+                <br />
+                jars of clay.
+              </h2>
+            </Reveal>
+
+            <Reveal delayMs={120} className="space-y-6">
+              <p className="font-serif text-[1.2rem] leading-[1.65] text-ink sm:text-[1.35rem]">
+                It&apos;s a big and confusing world, often filled with obstacles.
+                We help those with disabilities navigate those obstacles and get
+                where they want to go in life.
+              </p>
+              <p className="font-serif text-lg leading-relaxed text-ink/75">
+                Lutreos provides supported living services—steady, personal
+                support that facilitates success and progress for each
+                individual we walk alongside.
+              </p>
+              <blockquote className="border-l-2 border-cobalt pl-5">
+                <p className="font-serif text-base italic leading-relaxed text-ink/80 sm:text-lg">
+                  “But we have this treasure in jars of clay, to show that the
+                  surpassing power belongs to God and not to us.”
+                </p>
+                <cite className="mt-3 block font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-concrete not-italic">
+                  2 Corinthians 4:7
+                </cite>
+              </blockquote>
+            </Reveal>
+          </div>
+        </section>
+
+        <section id="support" className="bg-ink text-white">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
+            <Reveal>
+              <p className="font-display text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-sky-wash">
+                What we do
+              </p>
+              <h2 className="mt-5 max-w-3xl font-display text-[clamp(2rem,4vw,3.1rem)] font-bold uppercase leading-[0.98] tracking-[0.02em]">
+                Supported living,
+                <span className="text-sky-wash"> shaped around the person.</span>
+              </h2>
+            </Reveal>
+
+            <div className="mt-14 grid gap-10 border-t border-white/12 pt-10 md:grid-cols-3 md:gap-8">
+              {[
+                {
+                  title: "Daily living support",
+                  body: "Practical help with the rhythms of home and community, so clients can live with dignity and momentum.",
+                },
+                {
+                  title: "Navigation & advocacy",
+                  body: "We help clear paths through systems, schedules, and obstacles that can otherwise stall progress.",
+                },
+                {
+                  title: "Individual progress",
+                  body: "Goals belong to the person. Our work is to facilitate success on their terms, one step at a time.",
+                },
+              ].map((item, index) => (
+                <Reveal key={item.title} delayMs={index * 100}>
+                  <p className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-cobalt">
+                    0{index + 1}
+                  </p>
+                  <h3 className="mt-4 font-display text-2xl font-semibold uppercase tracking-[0.04em]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 font-serif text-base leading-relaxed text-white/72">
+                    {item.body}
+                  </p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="moments" className="concrete-wash">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
+            <Reveal className="mb-10 flex flex-col gap-6 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="font-display text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-cobalt">
+                  Moments
+                </p>
+                <h2 className="mt-4 font-display text-[clamp(2rem,4vw,3rem)] font-bold uppercase leading-[0.98] tracking-[0.02em] text-ink">
+                  Life, quietly shared.
+                </h2>
+                <p className="mt-4 max-w-xl font-serif text-lg leading-relaxed text-ink/75">
+                  A secondary window into Lutreos—follow along on Instagram for
+                  updates, and browse brand moments here.
+                </p>
+              </div>
+              <a
+                href="https://www.instagram.com/_lutreos/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center gap-2 border border-ink/15 bg-white/60 px-4 py-2.5 font-display text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors duration-300 hover:border-cobalt hover:text-cobalt"
+              >
+                Instagram @_lutreos
+                <span aria-hidden>↗</span>
+              </a>
+            </Reveal>
+
+            <Reveal delayMs={120}>
+              <InstagramMoments />
+            </Reveal>
+          </div>
+        </section>
+
+        <section id="contact" className="relative overflow-hidden bg-cobalt">
+          <div className="absolute inset-0 bg-[radial-gradient(70%_80%_at_15%_20%,rgba(143,166,201,0.28),transparent_55%)]" />
+          <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16 lg:px-10 lg:py-28">
+            <Reveal>
+              <p className="font-display text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-white/70">
+                Contact
+              </p>
+              <h2 className="mt-5 font-display text-[clamp(2.1rem,4.5vw,3.4rem)] font-bold uppercase leading-[0.95] tracking-[0.02em] text-white">
+                Ready to talk
+                <br />
+                about support?
+              </h2>
+              <p className="mt-5 max-w-lg font-serif text-lg leading-relaxed text-white/80">
+                Reach out by email or phone. We&apos;d be glad to listen and help
+                you take the next step.
+              </p>
+            </Reveal>
+
+            <Reveal delayMs={140} className="space-y-6 border-t border-white/20 pt-8 lg:border-t-0 lg:pt-0">
+              <div>
+                <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/55">
+                  Email
+                </p>
+                <a
+                  href="mailto:hello@lutreos.com"
+                  className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:opacity-80 sm:text-3xl"
+                >
+                  hello@lutreos.com
+                </a>
+              </div>
+              <div>
+                <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/55">
+                  Phone
+                </p>
+                <a
+                  href="tel:+15304104172"
+                  className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:opacity-80 sm:text-3xl"
+                >
+                  (530) 410-4172
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a
+                  href="https://www.facebook.com/lutreos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/75 transition-colors duration-300 hover:text-white"
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/_lutreos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/75 transition-colors duration-300 hover:text-white"
+                >
+                  Instagram
+                </a>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t border-white/10 bg-ink">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10">
+          <Image
+            src="/brand/logo/lutreos-wordmark-one-color-white.svg"
+            alt="Lutreos"
+            width={120}
+            height={28}
+            className="h-5 w-auto opacity-80"
+          />
+          <p className="font-display text-[0.68rem] font-medium uppercase tracking-[0.16em] text-concrete">
+            Lutreos LLC · Supported living services
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </footer>
     </div>
   );
 }
