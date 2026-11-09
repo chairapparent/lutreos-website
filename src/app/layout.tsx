@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.lutreos.com"),
   title: "Lutreos | Supported Living Services",
   description:
     "Lutreos provides supported living services and helps people with developmental disabilities navigate obstacles and get where they want to go in life.",
