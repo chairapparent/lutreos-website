@@ -35,7 +35,7 @@ export function InstagramMoments() {
   }, []);
 
   return (
-    <div className="overflow-hidden border border-concrete/50 bg-white/70">
+    <div className="mx-auto w-full max-w-[540px] overflow-hidden border border-concrete/50 bg-white/70">
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/_lutreos/"
