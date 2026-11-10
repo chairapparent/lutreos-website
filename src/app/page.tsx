@@ -166,7 +166,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="relative overflow-hidden bg-cobalt">
+        <section id="contact" className="relative overflow-hidden bg-cobalt text-white">
           <div className="absolute inset-0 bg-[radial-gradient(70%_80%_at_15%_20%,rgba(143,166,201,0.28),transparent_55%)]" />
           <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16 lg:px-10 lg:py-28">
             <Reveal>
@@ -184,25 +184,25 @@ export default function Home() {
               </p>
             </Reveal>
 
-            <Reveal delayMs={140} className="space-y-6 border-t border-white/20 pt-8 lg:border-t-0 lg:pt-0">
+            <Reveal delayMs={140} className="space-y-6 border-t border-white/20 pt-8 text-white lg:border-t-0 lg:pt-0">
               <div>
-                <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/55">
+                <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/70">
                   Email
                 </p>
                 <a
                   href="mailto:hello@lutreos.com"
-                  className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:opacity-80 sm:text-3xl"
+                  className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:text-white hover:opacity-85 sm:text-3xl"
                 >
                   hello@lutreos.com
                 </a>
               </div>
               <div>
-                <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/55">
+                <p className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-white/70">
                   Phone
                 </p>
                 <a
                   href="tel:+15302328265"
-                  className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:opacity-80 sm:text-3xl"
+                  className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:text-white hover:opacity-85 sm:text-3xl"
                 >
                   530-232-8265
                 </a>
@@ -212,7 +212,7 @@ export default function Home() {
                   href="https://www.facebook.com/lutreos"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/75 transition-colors duration-300 hover:text-white"
+                  className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/85 transition-colors duration-300 hover:text-white"
                 >
                   Facebook
                 </a>
@@ -220,7 +220,7 @@ export default function Home() {
                   href="https://www.instagram.com/_lutreos/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/75 transition-colors duration-300 hover:text-white"
+                  className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/85 transition-colors duration-300 hover:text-white"
                 >
                   Instagram
                 </a>
