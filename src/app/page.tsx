@@ -201,10 +201,10 @@ export default function Home() {
                   Phone
                 </p>
                 <a
-                  href="tel:+15304104172"
+                  href="tel:+15302328265"
                   className="mt-2 inline-block font-serif text-2xl text-white transition-opacity duration-300 hover:opacity-80 sm:text-3xl"
                 >
-                  (530) 410-4172
+                  530-232-8265
                 </a>
               </div>
               <div className="flex flex-wrap gap-4 pt-2">
