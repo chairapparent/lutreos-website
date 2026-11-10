@@ -9,43 +9,26 @@ export default function Home() {
       <SiteHeader />
 
       <main className="flex-1">
-        <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-cobalt">
+        <section className="relative isolate overflow-hidden bg-cobalt text-white">
           <div className="absolute inset-0">
-            <Image
-              src="/brand/imagery/mockup-plaque.jpg"
-              alt=""
-              fill
-              priority
-              sizes="100vw"
-              className="animate-drift object-cover object-center opacity-55"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,20,20,0.28)_0%,rgba(31,75,153,0.55)_38%,rgba(24,58,120,0.92)_78%,rgba(20,20,20,0.96)_100%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_70%_20%,rgba(143,166,201,0.22),transparent_60%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(90%_70%_at_15%_10%,rgba(143,166,201,0.28),transparent_55%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_90%_80%,rgba(20,20,20,0.35),transparent_55%)]" />
           </div>
 
-          <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-32 sm:px-8 sm:pb-20 lg:px-10 lg:pb-24">
-            <Image
-              src="/brand/logo/lutreos-wordmark-one-color-white.svg"
-              alt="Lutreos"
-              width={720}
-              height={180}
-              priority
-              className="animate-rise h-auto w-[min(88vw,34rem)] max-w-full"
-            />
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-12 pt-28 sm:px-8 sm:pb-14 sm:pt-32 lg:px-10 lg:pb-16">
+            <hr className="section-rule animate-rule border-0 bg-white/90" />
 
-            <hr className="section-rule animate-rule delay-1 mt-8 border-0 bg-white/90" />
-
-            <h1 className="animate-rise delay-2 mt-8 max-w-3xl font-serif text-[clamp(1.85rem,4.6vw,3.35rem)] font-medium leading-[1.12] tracking-[-0.02em] text-white">
+            <h1 className="animate-rise delay-1 mt-6 max-w-3xl font-serif text-[clamp(1.7rem,3.8vw,2.75rem)] font-medium leading-[1.15] tracking-[-0.02em] text-white">
               We help our clients get where they want to go.
             </h1>
 
-            <p className="animate-rise delay-3 mt-5 max-w-xl font-serif text-[1.05rem] leading-relaxed text-white/82 sm:text-lg">
+            <p className="animate-rise delay-2 mt-4 max-w-xl font-serif text-base leading-relaxed text-white/85 sm:text-lg">
               Supported living services that help people with developmental
               disabilities navigate obstacles and make real progress in their
               lives.
             </p>
 
-            <div className="animate-rise delay-4 mt-9 flex flex-wrap items-center gap-3">
+            <div className="animate-rise delay-3 mt-7 flex flex-wrap items-center gap-3">
               <a
                 href="#contact"
                 className="inline-flex items-center bg-white px-5 py-3 font-display text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-cobalt transition-colors duration-300 hover:bg-paper"
@@ -54,7 +37,7 @@ export default function Home() {
               </a>
               <a
                 href="#mission"
-                className="inline-flex items-center border border-white/35 px-5 py-3 font-display text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:border-white hover:bg-white/10"
+                className="inline-flex items-center border border-white/40 px-5 py-3 font-display text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:border-white hover:bg-white/10"
               >
                 Our mission
               </a>
