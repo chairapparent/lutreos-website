@@ -128,19 +128,30 @@ export default function Home() {
                   Life, quietly shared.
                 </h2>
                 <p className="mt-4 max-w-xl font-serif text-lg leading-relaxed text-ink/75">
-                  A secondary window into Lutreos—follow along on Instagram for
-                  updates, and browse brand moments here.
+                  Follow along for updates from Lutreos on Facebook and
+                  Instagram.
                 </p>
               </div>
-              <a
-                href="https://www.instagram.com/_lutreos/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-fit items-center gap-2 border border-ink/15 bg-white/60 px-4 py-2.5 font-display text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors duration-300 hover:border-cobalt hover:text-cobalt"
-              >
-                Instagram @_lutreos
-                <span aria-hidden>↗</span>
-              </a>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.facebook.com/lutreos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-fit items-center gap-2 border border-ink/15 bg-white/60 px-4 py-2.5 font-display text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors duration-300 hover:border-cobalt hover:text-cobalt"
+                >
+                  Facebook
+                  <span aria-hidden>↗</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/_lutreos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-fit items-center gap-2 border border-ink/15 bg-white/60 px-4 py-2.5 font-display text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-ink transition-colors duration-300 hover:border-cobalt hover:text-cobalt"
+                >
+                  Instagram @_lutreos
+                  <span aria-hidden>↗</span>
+                </a>
+              </div>
             </Reveal>
 
             <Reveal delayMs={120}>
