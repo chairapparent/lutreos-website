@@ -9,7 +9,7 @@ export function BambooHRCareers() {
         id="BambooHR"
         data-domain="lutreos.bamboohr.com"
         data-version="1.0.0"
-        data-departmentId=""
+        data-departmentid=""
       />
       <Script
         src="https://lutreos.bamboohr.com/js/embed.js"
