@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BambooHRCareers } from "../components/BambooHRCareers";
 import { InstagramMoments } from "../components/InstagramMoments";
 import { Reveal } from "../components/Reveal";
 import { SiteHeader } from "../components/SiteHeader";
@@ -156,6 +157,40 @@ export default function Home() {
 
             <Reveal delayMs={120}>
               <InstagramMoments />
+            </Reveal>
+          </div>
+        </section>
+
+        <section id="careers" className="bg-ink text-white">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
+            <Reveal className="mb-10 flex flex-col gap-6 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="font-display text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-sky-wash">
+                  Careers
+                </p>
+                <h2 className="mt-4 font-display text-[clamp(2rem,4vw,3rem)] font-bold uppercase leading-[0.98] tracking-[0.02em]">
+                  Join the work.
+                </h2>
+                <p className="mt-4 max-w-xl font-serif text-lg leading-relaxed text-white/72">
+                  Open roles at Lutreos. Apply through BambooHR, or browse the
+                  full careers page.
+                </p>
+              </div>
+              <a
+                href="https://lutreos.bamboohr.com/careers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center gap-2 border border-white/25 px-4 py-2.5 font-display text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-white transition-colors duration-300 hover:border-white hover:bg-white/10"
+              >
+                Open careers page
+                <span aria-hidden>↗</span>
+              </a>
+            </Reveal>
+
+            <Reveal delayMs={120}>
+              <div className="border border-white/12 bg-white px-4 py-6 text-ink sm:px-6 sm:py-8">
+                <BambooHRCareers />
+              </div>
             </Reveal>
           </div>
         </section>
