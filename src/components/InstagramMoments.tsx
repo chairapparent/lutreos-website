@@ -35,7 +35,7 @@ export function InstagramMoments() {
   }, []);
 
   return (
-    <div className="mx-auto w-full max-w-[540px] overflow-hidden border border-concrete/50 bg-white/70">
+    <div className="w-full overflow-hidden border border-concrete/50 bg-white/70">
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/_lutreos/"
@@ -43,8 +43,8 @@ export function InstagramMoments() {
         style={{
           background: "#FFF",
           border: 0,
-          margin: "0 auto",
-          maxWidth: "540px",
+          margin: 0,
+          maxWidth: "100%",
           minWidth: "280px",
           width: "100%",
         }}
