@@ -54,9 +54,9 @@ export default function Home() {
               </p>
               <hr className="section-rule mt-5" />
               <h2 className="mt-6 font-display text-[clamp(2rem,4vw,3.25rem)] font-bold uppercase leading-[0.95] tracking-[0.02em] text-ink">
-                Treasure in
+                Navigate the
                 <br />
-                jars of clay.
+                obstacles.
               </h2>
             </Reveal>
 
