@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -49,6 +50,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col bg-white text-ink antialiased">
         {children}
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          strategy="afterInteractive"
+          data-cf-beacon='{"token": "6ed43d34957a49fcb90ec8e43f7db523"}'
+        />
       </body>
     </html>
   );
