@@ -71,6 +71,20 @@ export default function Home() {
                 support that facilitates success and progress for each
                 individual we walk alongside.
               </p>
+              <div className="border-t border-ink/10 pt-6">
+                <p className="font-display text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-cobalt">
+                  Our name
+                </p>
+                <p className="mt-3 font-serif text-lg leading-relaxed text-ink/75">
+                  Lutreos takes its name from the Greek word{" "}
+                  <em className="italic text-ink">apolytrosis</em>, which means
+                  redemption or release—the act of setting someone free from what
+                  holds them back. It reflects the kind of support we aim to
+                  provide: practical, steady help that clears obstacles and opens
+                  the way for people to live with greater independence, dignity,
+                  and forward momentum in their own homes and communities.
+                </p>
+              </div>
             </Reveal>
           </div>
         </section>
